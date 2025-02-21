@@ -60,7 +60,12 @@ function PricingCard({ title, price, isYearly, features }: PricingPlanProps) {
   );
 }
 
-export default function Pricing() {
+type PricingProps = {
+  title?: string;
+  description?: string;
+};
+
+export default function Pricing({ title, description }: PricingProps) {
   const [isYearly, setIsYearly] = useState(false);
 
   const freePlanFeatures = [
@@ -86,12 +91,10 @@ export default function Pricing() {
   return (
     <section className="py-20 px-4 max-w-7xl mx-auto">
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Pricing</h2>
-        <p className="text-gray-600 max-w-2xl mx-auto">
-          Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget
-          elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget
-          habitasse in velit fringilla feugiat senectus in.
-        </p>
+       {title &&  <h2 className="text-4xl font-bold text-gray-900 mb-4">{title}</h2>}
+      {description&&  <p className="text-gray-600 max-w-2xl mx-auto">
+         {description}
+        </p>}
 
         <div className="flex items-center justify-center gap-4 mt-8">
           <button

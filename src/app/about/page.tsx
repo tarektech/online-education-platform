@@ -1,6 +1,12 @@
 import React from 'react';
 import AboutCard from './aboutCard';
 import { about } from '@/constant/about';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About Us',
+  description: 'SkillBridge is a platform that helps you learn new skills and get paid for them.',
+};
 
 export default function AboutusPage() {
   return (

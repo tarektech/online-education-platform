@@ -1,6 +1,12 @@
 import CourseCard from "./CourseCard";
 import Courses from "./Courses";
 import { courses } from "@/constant/courses";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Courses',
+  description: 'SkillBridge is a platform that helps you learn new skills and get paid for them.',
+};
 
 export default function CoursesPage() {
   return (

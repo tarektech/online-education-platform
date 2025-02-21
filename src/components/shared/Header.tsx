@@ -77,12 +77,12 @@ export default function Header() {
 
           {/* Navigation Links */}
           <nav className="flex items-center gap-8 justify-between w-full ">
-            <ul className="hidden md:flex gap-8">
+            <ul className="hidden lg:flex gap-8">
               {links.map((link) => (
                 <li key={link.id}>
                   <Link
                     href={link.href}
-                    className={`text-gray-700 px-4 py-2  ${
+                    className={`text-gray-700 px-4 py-2 whitespace-nowrap ${
                       pathname === link.href ? 'bg-light-95' : ''
                     }`}
                   >
@@ -98,7 +98,7 @@ export default function Header() {
                 <li key={authLink.id}>
                   <Link
                     href={authLink.href}
-                    className={`px-4 py-2 rounded ${
+                    className={`px-4 py-2 rounded whitespace-nowrap ${
                       authLink.label === 'Sign Up'
                         ? 'text-gray-700'
                         : 'bg-orange-500 text-white hover:bg-orange-600'
@@ -110,7 +110,7 @@ export default function Header() {
               ))}
             </ul>
             {/* Mobile Navigation */}
-            <div className="md:hidden">
+            <div className="lg:hidden">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className="transition-transform duration-300"
@@ -160,11 +160,15 @@ export default function Header() {
                   {links.map((link) => (
                     <li
                       key={link.id}
-                      className="transform transition-all duration-300 hover:translate-x-2"
+                      className={` transform transition-all duration-300 md:hover:translate-x-2 `}
                     >
                       <Link
                         href={link.href}
-                        className="text-gray-700 hover:text-gray-900"
+                        className={`text-gray-700 px-4 py-2 rounded hover:text-gray-900 ${
+                          pathname === link.href
+                            ? 'text-orange-500 bg-light-95'
+                            : ''
+                        }`}
                       >
                         {link.label}
                       </Link>

@@ -94,6 +94,7 @@ const FAQItem = ({
   );
 };
 
+
 const FrequentlyQuestionSection = () => {
   return (
     <section className="py-20 px-4">
@@ -103,8 +104,8 @@ const FrequentlyQuestionSection = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-gray-600">
-              Still you have any questions? Contact our Team via{' '}
+            <p className="text-gray-600 text-xl mb-4">
+              Still you have any questions? Contact our <br /> Team via {' '}
               <a
                 href="mailto:support@skillbridge.com"
                 className="text-orange-500 hover:underline"

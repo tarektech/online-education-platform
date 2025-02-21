@@ -41,15 +41,19 @@ function BrandCard() {
   return (
     <div className="flex justify-center items-center gap-4 md:gap-8 lg:gap-10 p-4 md:p-6 lg:p-10">
       {brands.map((brand) => (
-        <Image
-          path={brand.image}
-          alt={brand.name}
-          key={brand.id}
-          width={20}
-          height={20}
-          priority
+        <div
           className="w-16 md:w-20 lg:w-24 aspect-square object-contain"
-        />
+          key={brand.id}
+        >
+          <Image
+            path={brand.image}
+            alt={brand.name}
+            width={200}
+            height={50}
+            priority
+            className="object-contain"
+          />
+        </div>
       ))}
     </div>
   );
@@ -57,7 +61,7 @@ function BrandCard() {
 
 export default function BrandLogoSection() {
   return (
-    <section className="w-[90%] md:w-[85%] lg:w-[80%] mx-auto ">
+    <section className="w-[90%] md:w-[85%] lg:w-[80%] mx-auto py-10">
       <BrandCard />
     </section>
   );
