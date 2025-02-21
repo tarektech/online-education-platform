@@ -19,7 +19,7 @@ function PricingCard({ title, price, isYearly, features }: PricingPlanProps) {
   const displayPrice = isYearly ? yearlyPrice : price;
 
   return (
-    <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-100 flex flex-col h-full">
+    <div className="bg-white rounded-lg p-8 shadow-xs border border-gray-100 flex flex-col h-full">
       <div className="bg-[#FFF9F4] -mx-8 px-8 py-4 -mt-8 rounded-t-lg mb-8">
         <h3 className="text-xl font-semibold text-gray-900 text-center">
           {title}
