@@ -41,12 +41,14 @@ export default function InputWithTextArea({
       name={name}
       render={({ field }) => (
         <FormItem>
-          <FormLabel htmlFor={name}>{titleLabel}</FormLabel>
+          <FormLabel className="text-base ml-10 md:ml-0 py-2" htmlFor={name}>
+            {titleLabel}
+          </FormLabel>
 
           <FormControl>
             <Textarea
               id={name}
-              className={`w-full max-w-full disabled:text-blue-500 dark:disabled:text-yellow-300 disabled:opacity-75 ${className}`}
+              className={`w-full max-w-full disabled:text-blue-500 dark:disabled:text-yellow-300 disabled:opacity-75 m-4 md:my-4 ${className}`}
               {...field}
               {...props}
             />

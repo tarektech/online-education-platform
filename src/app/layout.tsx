@@ -4,6 +4,8 @@ import './globals.css';
 import Header from '@/components/shared/Header';
 import Footer from '@/components/shared/Footer';
 import { Toaster } from 'react-hot-toast';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { ThemeProvider } from '@/components/theme-provider';
 const geistSans = Geist({
   variable: '--font-geist-sans',
   subsets: ['latin'],
@@ -29,10 +31,17 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
-        <Header />
-        <main >{children}</main>
-        <Footer />
-        <Toaster position='top-right'/>
+        {/* <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        > */}
+          <Header />
+          <main>{children}</main>
+          <Footer />
+          <Toaster position="top-right" />
+        {/* </ThemeProvider> */}
       </body>
     </html>
   );

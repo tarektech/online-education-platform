@@ -89,9 +89,7 @@ export default function BenefitsSection() {
     <section className="grid gap-20 w-[90%] md:w-[85%] lg:w-[80%] mx-auto py-16">
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-10">
         <div className="flex flex-col gap-4">
-          <h1 className="text-2xl md:text-3xl ">
-            Benefits
-          </h1>
+          <h1 className="text-2xl md:text-3xl ">Benefits</h1>
           <p className="text-sm md:text-lg pr-4 md:pr-10 text-grey-30 ">
             Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget
             elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum

@@ -44,7 +44,7 @@ export default function Hero() {
               <Link href="/courses">Explore Courses</Link>
             </Button>
             <Button
-              className="bg-background text-foreground shadow-none hover:bg-orange-500 hover:text-white w-full sm:w-auto"
+              className="bg-white text-black shadow-none hover:bg-orange-500 hover:text-white w-full sm:w-auto"
               asChild
             >
               <Link href="/pricing">View Pricing</Link>

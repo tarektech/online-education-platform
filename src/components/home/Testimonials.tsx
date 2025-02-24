@@ -1,6 +1,6 @@
 import Image from '../Image';
 
-const testimonials = [
+export const testimonials = [
   {
     id: 1,
     title:

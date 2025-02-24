@@ -6,7 +6,7 @@ export default function Courses() {
           <h1 className="text-4xl font-bold ">
             Online Courses on Design and Development
           </h1>
-          <p className="text-foreground text-lg opacity-90 ">
+          <p className="text-lg opacity-90 ">
             Welcome to our online course page, where you can enhance your skills
             in design and development. Choose from our carefully curated
             selection of 10 courses designed to provide you with comprehensive

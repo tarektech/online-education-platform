@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from '../Image';
 import { usePathname } from 'next/navigation';
+import SwitchThemeToggle from '../SwitchThemeToggle';
 
 const links = [
   {
@@ -36,12 +37,12 @@ const authLinks = [
   {
     id: 1,
     label: 'Sign Up',
-    href: '/signup',
+    href: '/auth',
   },
   {
     id: 2,
     label: 'Login',
-    href: '/login',
+    href: '/auth',
   },
 ];
 
@@ -108,6 +109,7 @@ export default function Header() {
                   </Link>
                 </li>
               ))}
+              <SwitchThemeToggle />
             </ul>
             {/* Mobile Navigation */}
             <div className="lg:hidden">

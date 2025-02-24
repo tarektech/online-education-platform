@@ -91,10 +91,12 @@ export default function Pricing({ title, description }: PricingProps) {
   return (
     <section className="py-20 px-4 max-w-7xl mx-auto">
       <div className="text-center mb-16">
-       {title &&  <h2 className="text-4xl font-bold text-gray-900 mb-4">{title}</h2>}
-      {description&&  <p className="text-gray-600 max-w-2xl mx-auto">
-         {description}
-        </p>}
+        {title && (
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">{title}</h2>
+        )}
+        {description && (
+          <p className="text-gray-600 max-w-2xl mx-auto">{description}</p>
+        )}
 
         <div className="flex items-center justify-center gap-4 mt-8">
           <button

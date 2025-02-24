@@ -30,7 +30,7 @@ export default function ContactForm() {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="flex flex-col space-y-4 md:space-y-6 "
+          className="flex flex-col space-y-4 md:space-y-6 gap-4"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mx-10 py-4 md:mx-6">
             <InputWithLabel titleLabel="First Name" name="firstName" />
@@ -41,7 +41,7 @@ export default function ContactForm() {
           <InputWithTextArea
             titleLabel="Message"
             name="message"
-            className="min-h-[120px] md:min-h-[150px]"
+            className="min-h-[120px] md:min-h-[150px] max-w-[90%] md:max-w-full mx-auto"
           />
           <Button
             type="submit"
